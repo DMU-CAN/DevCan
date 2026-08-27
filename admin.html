@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAN Admin</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body class="admin-body">
+  <main class="admin-shell">
+    <section class="admin-login" id="loginView">
+      <div class="admin-login-card">
+        <a href="index.html" class="admin-logo">&lt;CAN/&gt;</a>
+        <h1>관리자 로그인</h1>
+        <form id="loginForm">
+          <label>
+            이메일
+            <input type="email" id="adminEmail" autocomplete="email" required />
+          </label>
+          <label>
+            비밀번호
+            <input type="password" id="adminPassword" autocomplete="current-password" required />
+          </label>
+          <button class="btn btn-primary btn-full" type="submit">로그인</button>
+        </form>
+        <p class="admin-message" id="loginMessage"></p>
+      </div>
+    </section>
+
+    <section class="admin-dashboard" id="dashboardView" hidden>
+      <aside class="admin-sidebar">
+        <a href="index.html" class="admin-logo">&lt;CAN/&gt;</a>
+        <nav class="admin-tabs" id="adminTabs"></nav>
+        <button class="admin-ghost" id="seedBtn" type="button"><i data-lucide="database"></i> 초기 데이터 시딩</button>
+        <button class="admin-ghost" id="logoutBtn" type="button"><i data-lucide="log-out"></i> 로그아웃</button>
+      </aside>
+      <section class="admin-main">
+        <header class="admin-header">
+          <div>
+            <span class="section-tag">CMS</span>
+            <h1 id="panelTitle">관리자</h1>
+          </div>
+          <button class="btn btn-primary" id="newItemBtn" type="button">추가</button>
+        </header>
+        <div class="admin-alert" id="adminAlert" hidden></div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div class="admin-modal-backdrop" id="editorModal" hidden>
+    <form class="admin-modal" id="editorForm">
+      <div class="admin-modal-head">
+        <h2 id="editorTitle">편집</h2>
+        <button type="button" class="admin-icon-btn" id="editorClose" aria-label="닫기"><i data-lucide="x"></i></button>
+      </div>
+      <div class="admin-form-grid" id="editorFields"></div>
+      <div class="admin-modal-actions">
+        <button class="btn btn-outline" type="button" id="deleteItemBtn">삭제</button>
+        <button class="btn btn-primary" type="submit">저장</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

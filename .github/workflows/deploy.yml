@@ -25,10 +25,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # GitHub Secrets에서 Firebase 설정을 읽어 firebase-config.js 생성
-      - name: Generate firebase-config.js from Secrets
+      # GitHub Secrets에서 Firebase 설정을 읽어 js/firebase-config.js 생성
+      - name: Generate js/firebase-config.js from Secrets
         run: |
-          cat > firebase-config.js << 'EOF'
+          cat > js/firebase-config.js << 'EOF'
           export const firebaseConfig = {
             apiKey: "${{ secrets.FIREBASE_API_KEY }}",
             authDomain: "${{ secrets.FIREBASE_AUTH_DOMAIN }}",

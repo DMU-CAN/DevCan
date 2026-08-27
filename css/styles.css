@@ -572,14 +572,14 @@ img {
 .gallery-overlay p { font-size: 0.82rem; color: rgba(255,255,255,0.7); }
 
 /* Gallery images */
-.news-1   { background: url('int.jpg')   center/cover no-repeat; }
-.news-2   { background: url('sn2.jpg')   center/cover no-repeat; }
-.event-1  { background: url('OT.png')    center/cover no-repeat; }
-.event-2  { background: url('mt1.jpg')   center/cover no-repeat; }
-.study-1  { background: url('sul1.jpg')  center/cover no-repeat; }
-.study-2  { background: url('sn1.jpg')   center/cover no-repeat; }
-.project-1{ background: url('sang1.jpg') center/cover no-repeat; }
-.project-2{ background: url('sang2.jpg') center/cover no-repeat; }
+.news-1   { background: url('../assets/images/int.jpg')   center/cover no-repeat; }
+.news-2   { background: url('../assets/images/sn2.jpg')   center/cover no-repeat; }
+.event-1  { background: url('../assets/images/OT.png')    center/cover no-repeat; }
+.event-2  { background: url('../assets/images/mt1.jpg')   center/cover no-repeat; }
+.study-1  { background: url('../assets/images/sul1.jpg')  center/cover no-repeat; }
+.study-2  { background: url('../assets/images/sn1.jpg')   center/cover no-repeat; }
+.project-1{ background: url('../assets/images/sang1.jpg') center/cover no-repeat; }
+.project-2{ background: url('../assets/images/sang2.jpg') center/cover no-repeat; }
 
 /* Add decorative icons to gallery placeholders */
 .hackathon-1::after, .hackathon-2::after, .event-1::after, .event-2::after,

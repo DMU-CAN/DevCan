@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>CAN - 컴퓨터소프트웨어공학 전공동아리</title>>
+  <title>CAN - 컴퓨터소프트웨어공학 전공동아리</title>
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://devcan.site" />
   <meta property="og:title"       content="CAN - 컴퓨터소프트웨어공학 전공동아리" />
   <meta property="og:description" content="코딩을 넘어, 함께 성장하는 공간. Computer Algorithm Network, CAN과 함께하세요." />
-  <meta property="og:image"       content="https://devcan.site/Logo.png" />
+  <meta property="og:image"       content="https://devcan.site/assets/images/Logo.png" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale"      content="ko_KR" />
@@ -17,9 +17,9 @@
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="CAN - 컴퓨터소프트웨어공학 전공동아리" />
   <meta name="twitter:description" content="코딩을 넘어, 함께 성장하는 공간. Computer Algorithm Network, CAN과 함께하세요." />
-  <meta name="twitter:image"       content="https://devcan.site/Logo.png" />
+  <meta name="twitter:image"       content="https://devcan.site/assets/images/Logo.png" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -160,7 +160,7 @@
         <h2>주요 활동</h2>
         <p>CAN에서는 다양한 활동을 통해 실력과 경험을 쌓을 수 있습니다.</p>
       </div>
-      <div class="activities-grid">
+      <div class="activities-grid" id="activitiesGrid">
         <div class="activity-card" data-aos>
           <div class="activity-icon"><i data-lucide="zap"></i></div>
           <h3>중간/기말고사 대비 스터디</h3>
@@ -362,11 +362,11 @@
         <h2>임원진 소개</h2>
         <p>CAN을 이끌어가는 2026년도 임원진을 소개합니다.</p>
       </div>
-      <div class="members-grid">
+      <div class="members-grid" id="membersGrid">
         <div class="member-card executive">
           <div class="member-avatar">
             <div class="avatar-photo">
-              <img src="Minseo.jpg" alt="김민서" />
+              <img src="assets/images/Minseo.jpg" alt="김민서" />
             </div>
           </div>
           <div class="member-info">
@@ -381,7 +381,7 @@
         <div class="member-card">
           <div class="member-avatar">
             <div class="avatar-photo">
-              <img src="Jinwoo.jpg" alt="김진우" />
+              <img src="assets/images/Jinwoo.jpg" alt="김진우" />
             </div>
           </div>
           <div class="member-info">
@@ -396,7 +396,7 @@
         <div class="member-card">
           <div class="member-avatar">
             <div class="avatar-photo">
-              <img src="Donghyuk.png" alt="김동혁" />
+              <img src="assets/images/Donghyuk.png" alt="김동혁" />
             </div>
           </div>
           <div class="member-info">
@@ -411,7 +411,7 @@
         <div class="member-card">
           <div class="member-avatar">
             <div class="avatar-photo">
-              <img src="Dayeon.jpg" alt="김다연" />
+              <img src="assets/images/Dayeon.jpg" alt="김다연" />
             </div>
           </div>
           <div class="member-info">
@@ -426,7 +426,7 @@
         <div class="member-card">
           <div class="member-avatar">
             <div class="avatar-photo">
-              <img src="Jino.jpg" alt="정진오" />
+              <img src="assets/images/Jino.jpg" alt="정진오" />
             </div>
           </div>
           <div class="member-info">
@@ -442,7 +442,7 @@
         <div class="member-card">
           <div class="member-avatar">
             <div class="avatar-photo">
-              <img src="Jino.jpg" alt="정진오" />
+              <img src="assets/images/Jino.jpg" alt="정진오" />
             </div>
           </div>
           <div class="member-info">
@@ -552,7 +552,7 @@
         <p>CAN의 최신 소식과 공지를 확인하세요.</p>
       </div>
       <div class="notice-wrap">
-        <div class="notice-list">
+        <div class="notice-list" id="noticeList">
           <div class="notice-item pinned">
             <div class="notice-badge pin"><i data-lucide="pin"></i> 중요</div>
             <div class="notice-content">
@@ -812,8 +812,8 @@
   <!-- Toast Notification -->
   <div class="toast" id="toast"></div>
 
-  <script src="script.js"></script>
-  <script type="module" src="firebase-form.js"></script>
+  <script type="module" src="js/script.js"></script>
+  <script type="module" src="js/firebase-form.js"></script>
   <script>lucide.createIcons();</script>
 </body>
 </html>
